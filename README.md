@@ -47,3 +47,4 @@ python .\deploy_shutter_preview.py deploy
 
 ## 致谢
 [USER-HFC/Lumix_Tool](https://github.com/USER-HFC/Lumix_Tool) 提供工具箱、WinUSB 驱动安装、RAM 诊断等工具
+[yis2014/Lumix_S5](https://github.com/yis2014/Lumix_S5)提供全分区解密和内存地址表等关键信息
