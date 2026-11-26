@@ -10,7 +10,7 @@
 | 闪光模式 | 「强制闪光开」「强制闪光开/红眼降低」已通过实机测试 |
 | 生命周期 | 补丁驻留在易失 RAM，拔电池冷启动后需重新部署 |
 
-搭配 iT32 时，使用M档，机身菜单只有「强制闪光开」「强制闪光开/红眼降低」「强制闪光关」可选。其余两种闪光模式未实测，使用时可能出现预览或引闪异常。
+搭配 iT32 时，使用M档，机身菜单只有「强制闪光开」「强制闪光开/红眼降低」「强制闪光关」可选，只实测了这三种模式。其余两种闪光模式未实测，使用时可能出现预览或引闪异常。
 
 在 ISO 51200 已到上限的情况下继续往增大方向拨，机身仍会退出实时预览。
 
@@ -41,3 +41,9 @@ python .\deploy_shutter_preview.py deploy
 | [`check_pin_packet.py`](check_pin_packet.py) | Capstone 反汇编和 Unicorn 仿真检查 |
 
 部署使用随包附带的 `s5svc.py` 与预编译文件。Windows 端需要 Python 和 WinUSB。开发依赖及复现方法见 [构建与仿真](USAGE.md#构建与仿真)。
+
+## 免责声明
+项目与 Panasonic 无关，纯属个人兴趣爱好。
+
+## 致谢
+[USER-HFC/Lumix_Tool](https://github.com/USER-HFC/Lumix_Tool) 提供工具箱、WinUSB 驱动安装、RAM 诊断等工具
