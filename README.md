@@ -24,7 +24,7 @@
 python .\deploy_shutter_preview.py deploy
 ```
 
-看到 `Installation armed` 后拨一格 ISO，让机身发布一次设置。随后点按 Fn2，等待实时预览稳定后拍摄。
+看到 `Installation armed` 后拨一格 ISO，让机身发布一次设置。然后按fn2就可以切换实时预览状态。
 
 - [使用说明](USAGE.md) 涵盖服务模式、部署、状态检查、拍摄、回滚和构建。
 - [地址与实现](docs/TECHNICAL.md) 记录固件入口、取景设置包、状态机、控制区和实测结果。
