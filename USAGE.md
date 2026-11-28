@@ -9,8 +9,8 @@
 ## 准备
 
 1. 确认机身为 Panasonic DC-S5 一代（MC801），固件为 2.9。部署脚本会校验已知指令字节。
-2. 关机，按住回放键与 AF/AE LOCK 键并开机，随后通过 USB 连接 Windows 电脑。确认服务模式设备 ID 为 `04DA:2370`。
-3. 首次连接可用 Zadig 给 `04DA:2370` 设备绑定 WinUSB。若找不到设备，可在 Zadig 开启 `Options → List All Devices` 后核对设备 ID。
+2. 关机，按住回放键与 AF/AE LOCK 键并开机，随后通过 USB 连接 Windows 电脑。确认服务模式设备 ID 为 `04DA:2370`。组合键参考 [s5-unlocker 的 DC-S5 服务模式说明](https://github.com/rileydeacon/s5-unlocker#option-1-offline-android-app-s5unlockerapk)。
+3. 首次连接可用 Zadig 给 `04DA:2370` 设备绑定 WinUSB。若找不到设备，可在 Zadig 开启 `Options → List All Devices` 后核对设备 ID。参考 [Zadig 官方站点](https://zadig.akeo.ie/)。
 4. 在项目根目录打开 PowerShell，确认 `python` 可用。验证环境使用 Python 3.12。部署脚本默认加载项目根目录随附的 `s5svc.py`。
 
 ```powershell
@@ -20,6 +20,8 @@ python .\deploy_shutter_preview.py status
 随附的 `s5svc.py` 来自实测使用的 LumixTool 0.3.1 Windows 环境，使用 Python 标准库和 Windows 的 WinUSB。此前配置过 `LUMIX_S5SVC` 的用户，可以在当前 PowerShell 运行 `Remove-Item Env:LUMIX_S5SVC -ErrorAction SilentlyContinue`，切回随包版本。
 
 ## 部署
+
+可直接双击项目根目录下的 `一键部署闪光灯实时预览.bat` 一键部署，或在 PowerShell 中运行：
 
 ```powershell
 python .\deploy_shutter_preview.py deploy
